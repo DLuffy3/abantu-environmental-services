@@ -161,12 +161,19 @@
 								</p>
 					</div>
 					<div class="echofy-button" data-animation="fadeInUp" data-delay="1000ms">
-						<a href="#">Let’s Talk <img src="assets/images/home1/button-shape.png" alt=""></a>
+						<a href="./assets/documents/EC_CMP_Gazette_Version_November_2025.pdf" target="_blank" download>
+							Download EC CMP Gazette Version November
+							<img src="assets/images/home1/button-shape.png" alt="">
+						</a>
 						<img class="two" src="assets/images/home1/button-shape-2.png" alt="">
 					</div>		
-					<div class="echofy-button two" data-animation="fadeInUp" data-delay="1200ms">
-						<a href="#">Read More</a>
-					</div>
+					<div class="echofy-button" data-animation="fadeInUp" data-delay="1000ms">
+						<a href="./assets/documents/EC_CMP_Gazzette_for_Public_Comments.pdf" target="_blank" download>
+							Download EC CMP Gazette for Public Comment
+							<img src="assets/images/home1/button-shape.png" alt="">
+						</a>
+						<img class="two" src="assets/images/home1/button-shape-2.png" alt="">
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -191,12 +198,19 @@
 								and magnitude.</p>
 					</div>
 					<div class="echofy-button" data-animation="fadeInUp" data-delay="1000ms">
-						<a href="about.html">Let’s Talk  <img src="assets/images/home1/button-shape.png" alt=""></a>
+						<a href="./assets/documents/EC_CMP_Gazette_Version_November_2025.pdf" target="_blank" download>
+							Download EC CMP Gazette Version November
+							<img src="assets/images/home1/button-shape.png" alt="">
+						</a>
 						<img class="two" src="assets/images/home1/button-shape-2.png" alt="">
 					</div>		
-					<div class="echofy-button two" data-animation="fadeInUp" data-delay="1200ms">
-						<a href="#">Read More</a>
-					</div>
+					<div class="echofy-button" data-animation="fadeInUp" data-delay="1000ms">
+						<a href="./assets/documents/EC_CMP_Gazzette_for_Public_Comments.pdf" target="_blank" download>
+							Download EC CMP Gazette for Public Comment
+							<img src="assets/images/home1/button-shape.png" alt="">
+						</a>
+						<img class="two" src="assets/images/home1/button-shape-2.png" alt="">
+					</div>	
 				</div>
 			</div>
 		</div>
@@ -1195,5 +1209,15 @@
 	<script src="assets/js/vanilla-tilt.min.js"></script>
 	<script src="assets/js/silik-slider.js"></script>
 
+	<script>
+		function forceDownload() {
+			const link = document.createElement('a');
+			link.href = "assets/documents/EC_CMP_Gazette_Version_November_2025.pdf";
+			link.download = "EC_CMP_Gazette_Version_November_2025.pdf";
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		}
+	</script>
 </body>
 </html>
