@@ -1,140 +1,400 @@
 
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        body {
-            background-color: #fafef7;
-            color: #1f2e1c;
-            scroll-behavior: smooth;
-        }
-        /* brand green */
-        .brand-green {
-            color: #1f5e2d;
-        }
-        .bg-brand-deep {
-            background-color: #0a2f1a;
-        }
-        .bg-brand-soft {
-            background-color: #e9f5e6;
-        }
-        .border-brand {
-            border-color: #1f5e2d !important;
-        }
-        .btn-outline-brand {
-            border-color: #1f5e2d;
-            color: #1f5e2d;
-        }
-        .btn-outline-brand:hover {
-            background-color: #1f5e2d;
-            color: white;
-        }
-        .section-title {
-            font-weight: 700;
-            font-size: 1.9rem;
-            border-left: 6px solid #1f5e2d;
-            padding-left: 18px;
-            margin-bottom: 2rem;
-            letter-spacing: -0.3px;
-        }
-        .card-service, .value-card {
-            transition: all 0.2s ease;
-            border: none;
-            border-radius: 1.2rem;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.02), 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
-        }
-        .table-responsive-custom {
-            border-radius: 1rem;
-            overflow-x: auto;
-        }
-        .table-project {
-            font-size: 0.85rem;
-            background-color: white;
-            border-collapse: separate;
-            border-spacing: 0;
-            width: 100%;
-        }
-        .table-project th {
-            background-color: #1f5e2d;
-            color: white;
-            font-weight: 600;
-            padding: 12px 8px;
-            border-bottom: none;
-        }
-        .table-project td {
-            padding: 10px 8px;
-            vertical-align: top;
-            border-bottom: 1px solid #e2e8e2;
-        }
-        .badge-service {
-            background-color: #eef6ea;
-            color: #1a4f1a;
-            font-weight: 500;
-            border-radius: 40px;
-            padding: 8px 16px;
-            font-size: 0.85rem;
-        }
-        .profile-img-placeholder {
-            background: linear-gradient(135deg, #cfe9cf, #9bc49b);
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            border-radius: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: #1a4f1a;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-        footer a {
-            text-decoration: none;
-            color: #cfebcf;
-        }
-        footer a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-        .contact-strip {
-            background-color: #f1f9ef;
-            border-bottom: 1px solid #d4e8ce;
-        }
-        h2, h3, h4 {
-            font-weight: 700;
-        }
-        .stat-number {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: #1f5e2d;
-        }
-        /* Header hero image style */
-        .hero-header-img img, .footer-deco-img img {
-            width: 100%;
-            object-fit: cover;
-        }
-        .hero-header-img img {
-            max-height: 380px;
-            object-position: center 35%;
-        }
-        .footer-deco-img img {
-            max-height: 220px;
-            object-position: center 20%;
-        }
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 1.6rem;
-            }
-            .table-project th, .table-project td {
-                font-size: 0.75rem;
-                padding: 8px 5px;
-            }
-            .hero-header-img img {
-                max-height: 220px;
-            }
-            .footer-deco-img img {
-                max-height: 140px;
-            }
-        }
+* {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #fafef7;
+    color: #1f2e1c;
+    scroll-behavior: smooth;
+}
+/* brand green */
+.brand-green {
+    color: #1f5e2d;
+}
+.bg-brand-deep {
+    background-color: #0a2f1a;
+}
+.bg-brand-soft {
+    background-color: #e9f5e6;
+}
+.border-brand {
+    border-color: #1f5e2d !important;
+}
+.btn-outline-brand {
+    border-color: #1f5e2d;
+    color: #1f5e2d;
+}
+.btn-outline-brand:hover {
+    background-color: #1f5e2d;
+    color: white;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 1.9rem;
+    border-left: 6px solid #1f5e2d;
+    padding-left: 18px;
+    margin-bottom: 2rem;
+    letter-spacing: -0.3px;
+}
+.section-title-no-border {
+    border-left: none !important;
+    padding-left: 0;
+}
+.card-service, .value-card {
+    transition: all 0.2s ease;
+    border: none;
+    border-radius: 1.2rem;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02), 0 2px 5px rgba(0,0,0,0.05);
+}
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -12px rgba(0,0,0,0.1);
+}
+.table-responsive-custom {
+    border-radius: 1rem;
+    overflow-x: auto;
+}
+.table-project {
+    font-size: 0.85rem;
+    background-color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+.table-project th {
+    background-color: #1f5e2d;
+    color: white;
+    font-weight: 600;
+    padding: 12px 8px;
+    border-bottom: none;
+}
+.table-project td {
+    padding: 10px 8px;
+    vertical-align: top;
+    border-bottom: 1px solid #e2e8e2;
+}
+.badge-service {
+    background-color: #eef6ea;
+    color: #1a4f1a;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+.profile-img-placeholder {
+    background: linear-gradient(135deg, #cfe9cf, #9bc49b);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #1a4f1a;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+footer a {
+    text-decoration: none;
+    color: #cfebcf;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.contact-strip {
+    background-color: #f1f9ef;
+    border-bottom: 1px solid #d4e8ce;
+}
+h2, h3, h4 {
+    font-weight: 700;
+}
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1f5e2d;
+}
+/* Header hero image style */
+.hero-header-img img, .footer-deco-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.hero-header-img img {
+    max-height: 380px;
+    object-position: center 35%;
+}
+.footer-deco-img img {
+    max-height: 220px;
+    object-position: center 20%;
+}
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+    .table-project th, .table-project td {
+        font-size: 0.75rem;
+        padding: 8px 5px;
+    }
+    .hero-header-img img {
+        max-height: 220px;
+    }
+    .footer-deco-img img {
+        max-height: 140px;
+    }
+}
+/* ================= NAVBAR HOVER EFFECTS ================= */
+
+/* Logo hover effect */
+.navbar-brand {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.02) translateY(-2px);
+    opacity: 0.9;
+}
+
+.navbar-brand .logo-icon i {
+    transition: transform 0.3s ease, color 0.2s;
+    display: inline-block;
+}
+
+.navbar-brand:hover .logo-icon i {
+    transform: rotate(-5deg) scale(1.1);
+    color: #0f5c23;
+}
+
+/* Navbar tabs (nav-link) hover effect */
+.navbar-nav .nav-link {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    color: #2c5e2a;
+    border-radius: 5px;
+}
+
+/* Background and lift on hover */
+.navbar-nav .nav-link:hover {
+    background-color: #e9f5e6;
+    color: #0a4b1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 5px;
+}
+
+/* Underline animation from center */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #1f5e2d;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 70%;
+}
+
+/* Active tab styling - keep it distinct */
+.navbar-nav .nav-link.active {
+    color: #1f5e2d;
+    font-weight: 700;
+    background-color: transparent;
+    border-bottom: 2px solid #1f5e2d;
+    border-radius: 0;
+}
+
+.navbar-nav .nav-link.active:hover {
+    background-color: transparent;
+    transform: none;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-link.active:hover::after {
+    width: 0; /* no extra underline on active tab hover */
+}
+
+/* Responsive touch */
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+        text-align: center;
+    }
+    .navbar-nav .nav-link::after {
+        bottom: -2px;
+    }
+}
+
+/* ================= SECTION HOVER EFFECTS ================= */
+
+/* 1. Our Vision block hover effect */
+.bg-brand-soft.p-4.rounded-4 {
+    transition: all 0.3s ease-in-out;
+}
+.bg-brand-soft.p-4.rounded-4:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.15);
+    background-color: #e0f0db; /* slightly deeper green tint */
+}
+
+/* 2. Business Market Sectors badges hover effect */
+.badge-service {
+    transition: all 0.25s ease;
+    cursor: default;
+}
+.badge-service:hover {
+    transform: translateY(-3px) scale(1.02);
+    background-color: #d9e8d2;
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.1);
+    color: #0a4b1a;
+}
+
+/* 3. Service Offerings cards hover effect (enhanced) */
+.card-service {
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+.card-service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.12);
+    background-color: #fefef7;
+    border-left: 4px solid #1f5e2d;
+}
+
+/* 4. Our Professionals section hover effects */
+/* Team image zoom + subtle glow */
+#our-professionals .rounded-4.shadow-sm,
+.container.py-5 .col-md-5 .rounded-4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container.py-5 .col-md-5 .rounded-4:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
+}
+
+/* Strategic Partners box hover */
+.bg-light.p-4.rounded-4 {
+    transition: all 0.3s ease;
+}
+.bg-light.p-4.rounded-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px -10px rgba(0,0,0,0.1);
+    background-color: #f8fff4;
+}
+
+/* Project Experience tables – row highlight on hover (no horizontal scroll) */
+.table-project tbody tr {
+    transition: background-color 0.2s ease;
+}
+.table-project tbody tr:hover {
+    background-color: #eef6ea;
+    box-shadow: inset 0 0 0 1px #c8e0bc;
+    cursor: default;
+}
+
+.table-project tbody td {
+    transition: background-color 0.2s;
+}
+
+/* ================= SCROLLABLE CLIENTS SECTION ================= */
+.clients-section {
+    background-color: #f1f9ef;
+    border-top: 1px solid #d4e8ce;
+    border-bottom: 1px solid #d4e8ce;
+}
+
+/* Scroll wrapper – hides scrollbar on desktop if desired */
+.clients-scroll-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+}
+
+/* Hide scrollbar on Chrome/Safari (optional clean look) */
+.clients-scroll-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+.clients-scroll-wrapper::-webkit-scrollbar-track {
+    background: #e2e8e2;
+    border-radius: 10px;
+}
+.clients-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #1f5e2d;
+    border-radius: 10px;
+}
+
+/* The track that holds all logos */
+.clients-track {
+    display: inline-flex;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+    align-items: center;
+}
+
+.clients-scroll-wrapper {
+    text-align: center;  /* centers the inline-flex track */
+}
+
+.clients-track {
+    display: inline-flex;  /* already there, but ensure it's not block */
+}
+
+/* Individual logo container */
+.client-logo-item {
+    flex-shrink: 0;
+    width: 150px;
+    height: 100px;
+    background: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.client-logo-item img {
+    max-width: 100%;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    filter: grayscale(30%);
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+.client-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px -10px rgba(0,0,0,0.1);
+}
+
+.client-logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Responsive: smaller logos on mobile */
+@media (max-width: 768px) {
+    .client-logo-item {
+        width: 120px;
+        height: 80px;
+        padding: 0.75rem;
+    }
+    .client-logo-item img {
+        max-height: 50px;
+    }
+    .clients-track {
+        gap: 1rem;
+    }
+}
