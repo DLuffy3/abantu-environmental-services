@@ -398,3 +398,52 @@ h2, h3, h4 {
         gap: 1rem;
     }
 }
+
+/* ================= DOCUMENT LIBRARY: FOLDER ACCORDION ================= */
+
+/* Folder header row - looks like the existing document-card but is clickable */
+.folder-card {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.folder-card:hover {
+    background-color: #f6fbf3;
+}
+.folder-card .fa-folder {
+    color: #e9b949;
+}
+
+/* Chevron rotates to show open/closed state */
+.folder-chevron {
+    transition: transform 0.25s ease;
+    color: #1f5e2d;
+}
+.folder-card[aria-expanded="true"] .folder-chevron {
+    transform: rotate(180deg);
+}
+
+/* Nested contents get progressively indented + a left rail, like folders in a file tree */
+.folder-nested {
+    padding-left: 1.5rem;
+    border-left: 2px solid #e2e8e2;
+    margin-left: 0.9rem;
+}
+
+/* Download-all button - distinct from the single-file download button */
+.btn-download-all {
+    border-color: #1f5e2d;
+    color: #1f5e2d;
+    white-space: nowrap;
+}
+.btn-download-all:hover {
+    background-color: #1f5e2d;
+    color: white;
+}
+
+.folder-file-count {
+    font-size: 0.8rem;
+    display: block;
+    clear: left;
+    white-space: nowrap;
+}
